@@ -49,8 +49,9 @@ export default function Header() {
       <Container>
         <div className="flex items-center justify-between h-16 px-4">
           {/* Logo */}
-          <Link to="/" className="text-xl font-bold text-gray-800">
-            <Logo width="120px" />
+          <Link to="/" className="text-xl font-bold text-gray-800 flex items-center">
+            <Logo width="65px" />
+            <span className="ml-2">Univerity Official Blog Site</span>
           </Link>
 
           {/* Desktop Navigation - Hidden on mobile */}
