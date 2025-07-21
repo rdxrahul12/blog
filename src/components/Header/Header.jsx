@@ -49,7 +49,7 @@ export default function Header() {
       <Container>
         <div className="flex items-center justify-between h-16 px-4">
           {/* Logo */}
-          <Link to="/" className="text-xl font-bold text-gray-800 flex items-center">
+          <Link to="/" className="cursor-pointer text-xl font-bold text-gray-800 flex items-center">
             <Logo width="65px" />
             <span className="ml-2">Univerity Official Blog Site</span>
           </Link>
@@ -60,7 +60,7 @@ export default function Header() {
               <button
                 key={item.name}
                 onClick={() => navigate(item.slug)}
-                className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-indigo-600"
+                className="cursor-pointer px-3 py-2 text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-md"
               >
                 {item.name}
               </button>
@@ -96,14 +96,14 @@ export default function Header() {
                 <button
                   key={`mobile-${item.name}`}
                   onClick={() => navigate(item.slug)}
-                  className="block w-full text-left px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-md"
+                  className="block w-full text-left px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-md"
                 >
                   {item.name}
                 </button>
               ))}
               {isAuthenticated && (
-                <div className="pt-2 border-t border-gray-200 mt-2">
-                  <LogoutBtn className="w-full text-left px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-md" />
+                <div className="pt-2 border-t border-gray-200 mt-2 ">
+                  <LogoutBtn className="w-full text-left px-3 py-2 text-sm font-medium text-gray-700 cursor-pointer hover:bg-gray-50 rounded-md " />
                 </div>
               )}
             </div>
