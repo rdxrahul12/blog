@@ -1,6 +1,7 @@
 🌿 University Official Blog Site
 
 Live Demo: https://blog-green-nine-37.vercel.app
+<img width="1891" height="899" alt="image" src="https://github.com/user-attachments/assets/fc0e5f21-56ec-4ac3-99ff-8a1c440bfe1d" />
 
 A modern, responsive blog application built with React 19, Redux Toolkit, and Appwrite. It enables users to create, read, update, and delete blog posts using a powerful rich text editor.
 
